@@ -51,6 +51,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__contenido{
@@ -116,4 +117,25 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400; 
+}
+
+.presentacion__imagen{
+    height: 50%;
+}
+
+@media (max-width: 450px) {
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;}
+
+    .presentacion__contenido {
+        width: auto;
+    }
+    header {
+        padding: 10%;
+    }
+
+    .header__navegacion {
+        justify-content: center;
+}
 }
